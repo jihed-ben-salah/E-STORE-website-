@@ -7,7 +7,7 @@
         private ?string $user ;
         private ?string $token ;
 
-
+        
 
 
 	}
