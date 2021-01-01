@@ -1,4 +1,4 @@
- <?php
+<?php
 
 include_once "../config.php";
 	include_once "../model/fournisseur.php";
@@ -7,8 +7,8 @@ include_once "../config.php";
 	class fournisseurC {
 
 		function ajouterfournisseur( $login ,$mail  ,$password,$user,$token){
-			$sql="INSERT INTO fournisseur (login ,mail  , password ,user,token) 
-			VALUES (:login ,:mail  , :password ,:user ,:token )";
+			$sql="INSERT INTO fournisseur (login ,mail  ,password,user,token) 
+			VALUES (:login ,:mail  ,:password,:user ,:token )";
 			$db = config::getConnexion();
 			try{
 				$query = $db->prepare($sql);
@@ -59,11 +59,11 @@ include_once "../config.php";
 		 		$query = $db->prepare(
 		 			'UPDATE fournisseur SET 
 		 		   
-		 		    login=:login ,
-		 			  mail=:mail ,
-		 			 password=:password ,
-		 			 user=:user ,
-		 			WHERE id =:id'
+		 		    login= :login,
+		 			  mail= :mail,
+		 			 password= :password,
+		 			 user= :user,
+		 			WHERE id = :id'
 				 );
 			      $query->execute([	
 					  

@@ -1,24 +1,22 @@
 <?PHP
-	class fournisseur{
-		private ?int $id ;
-        private ?string $login ;
-        private ?string $mail ;
-        private ?string $password ;
-        private ?string $user ;
-        private ?string $token ;
-
+	class produit{
+		private ?int $idP = null;
+        private ?string $login = null;
+        private ?string $mail = null;
+        private ?string $password = null;
+        private ?string $user = null;
         
 
 
+
 	}
-          function __construct( string $login , string $mail ,string $password ,string $user , string $token){
+          function __construct( string $login,string $mail ,string $password ,string $user){
 
 
             $this->login=$login;
             $this->mail=$mail;
             $this->password=$password;
             $this->user=$user;
-            $this->token=$token;
 
         }
          function getNom(): string{
