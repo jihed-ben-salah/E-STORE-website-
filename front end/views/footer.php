@@ -11,6 +11,7 @@
                 <li><a href="#" title="faq">FAQ</a></li>
                 <li><a href="#" title="Popular Searches">Specials</a></li>
                 <li class="last"><a href="#" title="Where is my order?">Help Center</a></li>
+
               </ul>
             </div>
             <div class="footer-column pull-left">
@@ -67,9 +68,9 @@
         </div>
       </div>
       <div class="container">
-      <div class="col-sm-12 col-xs-12 footer-logo"><img alt="Datson" src="images/logo.png"></div>
+      <div class="col-sm-12 col-xs-12 footer-logo"><img alt="Datson" src="assets/images/logo.png"></div>
       <address>
-          <i class="fa fa-map-marker"></i>ThemesGround, 789 Main rd, Anytown, CA 12345  USA <i class="fa fa-mobile"></i><span> +(888) 123-4567</span> <i class="fa fa-envelope"></i><span> superb@themesground.com</span>
+          <i class="fa fa-map-marker"></i>ESPRIT EL GHAZELA<i class="fa fa-mobile"></i><span> +216 55542765</span> <i class="fa fa-envelope"></i><span> E-STORE.SPAORT@esprit.tn</span>
           </address>
       </div>
     </div>
@@ -77,7 +78,7 @@
     <div class="footer-bottom">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-xs-12 coppyright">&copy; 2016 ThemesGround. All Rights Reserved.</div>
+          <div class="col-sm-12 col-xs-12 coppyright">&copy; 2020 E-STORE. All Rights Reserved.</div>
           
         </div>
       </div>
@@ -286,19 +287,7 @@
     <li><a href="#">Kids</a> </li>
     <li><a href="contact-us.html">Contact Us</a> </li>
   </ul>
-  <div class="dropdown block-language-wrapper">
-                <ul>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="assets/images/english.png" alt="language"> English </a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="assets/images/francais.png" alt="language"> French </a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="assets/images/german.png" alt="language"> German </a></li>
-                </ul>
-              </div>
-              <div class="dropdown block-currency-wrapper"> 
-                <ul>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> $ - Dollar </a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> £ - Pound </a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> € - Euro </a></li>
-                </ul>
-              </div>
+  
 </div>
-</footer> 
+
+</footer>

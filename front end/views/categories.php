@@ -1,3 +1,8 @@
+<?php
+include '../controller/categoriesC.php';
+$categoriesC = new categoriesC();
+$categories = $categoriesC->afficherCategories();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,15 +19,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- CSS Style -->
-<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.css" media="all">
-<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="../assets/css/simple-line-icons.css" media="all">
-<link rel="stylesheet" type="text/css" href="../assets/css/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="../assets/css/owl.theme.css">
-<link rel="stylesheet" type="text/css" href="../assets/css/jquery.bxslider.css">
-<link rel="stylesheet" type="text/css" href="../assets/css/jquery.mobile-menu.css">
-<link rel="stylesheet" type="text/css" href="../assets/css/revslider.css" >
-<link rel="stylesheet" type="text/css" href="../assets/css/style.css" media="all">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" media="all">
+<link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css" media="all">
+<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.mobile-menu.css">
+<link rel="stylesheet" type="text/css" href="assets/css/revslider.css" >
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all">
 
 <!-- Google Fonts -->
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
@@ -30,14 +35,22 @@
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,600,600italic,400italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
 	<!-- SLIDER REVOLUTION 5.x CSS SETTINGS -->
-	<link rel="stylesheet" type="text/css" href="../assets/include/rs-plugin/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-	<link  rel="stylesheet" type="text/css"  media="all" href="../assets/include/rs-plugin/css/addons/revolution.addon.paintbrush.css" />
-	<link rel="stylesheet" type="text/css" href="../assets/include/rs-plugin/css/settings.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="../assets/include/rs-plugin/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="assets/include/rs-plugin/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+
+	<link  rel="stylesheet" type="text/css"  media="all" href="assets/include/rs-plugin/css/addons/revolution.addon.paintbrush.css" />
+
+	<link rel="stylesheet" type="text/css" href="assets/include/rs-plugin/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="assets/include/rs-plugin/css/layers.css">
+
+
 	<style>
+
 		#rev_slider_143_1 .uranus.tparrows{width:50px; height:50px; background:rgba(255,255,255,0)}#rev_slider_143_1 .uranus.tparrows:before{width:50px; height:50px; line-height:50px; font-size:40px; transition:all 0.3s;-webkit-transition:all 0.3s}#rev_slider_143_1 .uranus.tparrows:hover:before{opacity:0.75}
+
 	</style>
+
 </head>
+
 <body class="cms-index-index index">
 <div id="page"> 
   <!-- Header -->
@@ -48,10 +61,10 @@
           <div class="row"> 
             <!-- Header Language -->
             <div class="col-xs-7 col-sm-6">
-              <div class="dropdown block-language-wrapper hidden-xs"> <a role="button" data-toggle="dropdown" data-target="#" class="block-language dropdown-toggle" href="#"> <img src="../assets/images/english.png" alt="language"> English <span class="caret"></span> </a>
+              <div class="dropdown block-language-wrapper hidden-xs"> <a role="button" data-toggle="dropdown" data-target="#" class="block-language dropdown-toggle" href="#"> <img src="assets/images/english.png" alt="language"> English <span class="caret"></span> </a>
                 <ul class="dropdown-menu" role="menu">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="../assets/images/english.png" alt="language"> Français </a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="../assets/images/francais.png" alt="language"> Anglais </a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="assets/images/english.png" alt="language"> Français </a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="assets/images/francais.png" alt="language"> Anglais </a></li>
                 </ul>
               </div>
               <!-- End Header Language --> 
@@ -168,6 +181,7 @@
           <!-- Header Logo -->
           <div class="logo"><a title="E-STORE" href="categories.php"><img alt="E-STORE" src="assets/images/logo.png"></a></div>
           <!-- End Header Logo --> 
+
         <div class="mm-toggle-wrap">
           <div class="mm-toggle"><i class="fa fa-reorder"></i><span class="mm-label">Menu</span> </div>
         </div>
@@ -235,6 +249,9 @@
                               <li class="level2 nav-6-1-1"><a href="#/Jacket.html"><span>Denim Jacket </span></a></li>
                               <li class="level2 nav-6-1-1"><a href="#/vest.html"><span>Insulated Vest </span></a></li>
                               <li class="level2 nav-6-1-1"><a href="#/Jacket.html"><span>Varisity Jacket </span></a></li>
+
+
+
                             </ul>
                           </li>
                           <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Shoes</span></a>
@@ -243,6 +260,8 @@
                               <li class="level2 nav-6-1-1"><a href="#/boots.html"><span>Boots</span></a></li>
                               <li class="level2 nav-6-1-1"><a href="#/heels.html"><span>Heels</span></a></li>
                               <li class="level2 nav-6-1-1"><a href="#/sport-shoes.html"><span>Sport Shoes</span></a></li>
+
+
                             </ul>
                           </li>
                           <li class="level1 nav-6-1 parent item"><a href="#.html"><span>Jwellery</span></a>
@@ -346,6 +365,7 @@
  <!-- Slider
 		============================================= -->
 		<section id="slider" class="slider-element revslider-wrap full-screen clearfix">
+
 			<div id="rev_slider_143_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="paintbrush-addon" data-source="gallery" style="background:transparent;padding:0px;">
 			<!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->
 				<div id="rev_slider_143_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8.1">
@@ -354,6 +374,7 @@
 							<!-- MAIN IMAGE -->
 							<img src="assets/include/rs-plugin/demos/assets/images/paintbrush_bg2.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 							<!-- LAYERS -->
+
 							<!-- LAYER NR. 1 -->
 							
 								<!-- LAYER NR. 7 -->
@@ -364,16 +385,20 @@
 											data-width="360"
 								data-height="3"
 								data-whitespace="nowrap"
+
 								data-type="shape"
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":300,"speed":2000,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;rZ:-45;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"rZ:0deg;opacity:0;fb:10px;","ease":"Back.easeInOut"}]'
 								data-textAlign="['inherit','inherit','inherit','inherit']"
 								data-paddingtop="[0,0,0,0]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
+
 								style="z-index: 5;background-color:rgb(255,255,255);">
 					<div class="rs-looped rs-slideloop"  data-easing="Linear.easeNone" data-speed="5" data-xs="0" data-xe="0" data-ys="-10" data-ye="10"> </div></div>
+
 							<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-2"
 								 id="slide-361-layer-11"
 								 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
@@ -381,16 +406,21 @@
 											data-width="360"
 								data-height="3"
 								data-whitespace="nowrap"
+
 								data-type="shape"
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":300,"speed":2000,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;rZ:-45;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"rZ:0deg;opacity:0;fb:10px;","ease":"Back.easeInOut"}]'
 								data-textAlign="['inherit','inherit','inherit','inherit']"
 								data-paddingtop="[0,0,0,0]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
+
 								style="z-index: 5;background-color:rgb(255,255,255);">
+
 					</div>
+
 							<!-- LAYER NR. 2 -->
 							<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-1"
 								 id="slide-361-layer-2"
@@ -399,16 +429,20 @@
 											data-width="360"
 								data-height="3"
 								data-whitespace="nowrap"
+
 								data-type="shape"
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":700,"speed":2000,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;rZ:45;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"rZ:-45deg;opacity:0;fb:10px;","ease":"Back.easeInOut"}]'
 								data-textAlign="['inherit','inherit','inherit','inherit']"
 								data-paddingtop="[0,0,0,0]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
+
 								style="z-index: 6;background-color:rgb(255,255,255);">
 					<div class="rs-looped rs-slideloop"  data-easing="Linear.easeNone" data-speed="5" data-xs="0" data-xe="0" data-ys="10" data-ye="-10"> </div></div>
+
 							<!-- LAYER NR. 3 -->
 							<div class="tp-caption   tp-resizeme rs-parallaxlevel-12"
 								 id="slide-361-layer-1"
@@ -419,16 +453,20 @@
 								data-width="none"
 								data-height="none"
 								data-whitespace="nowrap"
+
 								data-type="text"
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"x:-150px;z:0;rX:0deg;rY:-45deg;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"x:150px;rY:45deg;opacity:0;fb:10px;","ease":"Power3.easeInOut"}]'
 								data-textAlign="['center','center','center','center']"
 								data-paddingtop="[5,5,5,2]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[10,10,10,10]"
+
 								style="z-index: 7; white-space: nowrap; font-size: 50px; line-height: 60px; font-weight: 600; color:#222; letter-spacing: 0px;font-family:Poppins;background-color:#f5f5f5;">
 					<div class="rs-looped rs-slideloop"  data-easing="Linear.easeNone" data-speed="10" data-xs="-20" data-xe="20" data-ys="0" data-ye="0">E-STORE <div class='frontcornertop'></div><div class='backcornertop'></div> </div></div>
+
 							<!-- LAYER NR. 4 -->
 							<div class="tp-caption   tp-resizeme rs-parallaxlevel-"
 								 id="slide-361-layer-9"
@@ -439,16 +477,20 @@
 								data-width="none"
 								data-height="none"
 								data-whitespace="nowrap"
+
 								data-type="text"
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:150px;z:0;rX:0deg;rY:45deg;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"x:-150px;rY:-45deg;opacity:0;fb:10px;","ease":"Power3.easeInOut"}]'
 								data-textAlign="['center','center','center','center']"
 								data-paddingtop="[5,5,5,2]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,10,0,0]"
 								data-paddingleft="[10,10,10,10]"
+
 								style="z-index: 8; white-space: nowrap; font-size: 50px; line-height: 60px; font-weight: 600; color: #ffffff; letter-spacing: 0px;font-family:Poppins;background-color:rgb(0,0,0);">
 					<div class="rs-looped rs-slideloop"  data-easing="Linear.easeNone" data-speed="10" data-xs="20" data-xe="-20" data-ys="0" data-ye="0">TOUT EST SPORT <div class='frontcorner'></div><div class='backcorner'></div> </div></div>
+
 						
 						
 						<!-- SLIDE  -->
@@ -456,6 +498,7 @@
 							<!-- MAIN IMAGE -->
 							<img src="assets/include/rs-plugin/demos/assets/images/pb_bw.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 							<!-- LAYERS -->
+
 							<!-- LAYER NR. 7 -->
 							<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-2"
 								 id="slide-362-layer-11"
@@ -464,16 +507,20 @@
 											data-width="360"
 								data-height="3"
 								data-whitespace="nowrap"
+
 								data-type="shape"
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":300,"speed":2000,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;rZ:-45;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"rZ:0deg;opacity:0;fb:10px;","ease":"Back.easeInOut"}]'
 								data-textAlign="['inherit','inherit','inherit','inherit']"
 								data-paddingtop="[0,0,0,0]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
+
 								style="z-index: 5;background-color:rgb(255,255,255);">
 					<div class="rs-looped rs-slideloop"  data-easing="Linear.easeNone" data-speed="5" data-xs="0" data-xe="0" data-ys="-10" data-ye="10"> </div></div>
+
 							<!-- LAYER NR. 8 -->
 							<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme rs-parallaxlevel-1"
 								 id="slide-362-layer-2"
@@ -482,16 +529,20 @@
 											data-width="360"
 								data-height="3"
 								data-whitespace="nowrap"
+
 								data-type="shape"
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":700,"speed":2000,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;rZ:45;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"rZ:-45deg;opacity:0;fb:10px;","ease":"Back.easeInOut"}]'
 								data-textAlign="['inherit','inherit','inherit','inherit']"
 								data-paddingtop="[0,0,0,0]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
+
 								style="z-index: 6;background-color:rgb(255,255,255);">
 					<div class="rs-looped rs-slideloop"  data-easing="Linear.easeNone" data-speed="5" data-xs="0" data-xe="0" data-ys="10" data-ye="-10"> </div></div>
+
 							<!-- LAYER NR. 9 -->
 							<div class="tp-caption   tp-resizeme rs-parallaxlevel-12"
 								 id="slide-362-layer-1"
@@ -502,16 +553,20 @@
 								data-width="none"
 								data-height="none"
 								data-whitespace="nowrap"
+
 								data-type="text"
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"x:-150px;z:0;rX:0deg;rY:-45deg;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"x:150px;rY:45deg;opacity:0;fb:10px;","ease":"Power3.easeInOut"}]'
 								data-textAlign="['center','center','center','center']"
 								data-paddingtop="[5,5,5,2]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[10,10,10,10]"
+
 								style="z-index: 7; white-space: nowrap; font-size: 50px; line-height: 60px; font-weight: 600; color: #ffffff; letter-spacing: 0px;font-family:Poppins;background-color:rgb(0,0,0);">
 					<div class="rs-looped rs-slideloop"  data-easing="Linear.easeNone" data-speed="10" data-xs="-20" data-xe="20" data-ys="0" data-ye="0">Avec Vous Peut N'importe Où Vous êtes <div class='frontcornertop'></div><div class='backcornertop'></div> </div></div>
+
 							<!-- LAYER NR. 10 -->
 							<div class="tp-caption   tp-resizeme rs-parallaxlevel-10"
 								 id="slide-362-layer-9"
@@ -522,16 +577,20 @@
 								data-width="none"
 								data-height="none"
 								data-whitespace="nowrap"
+
 								data-type="text"
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:150px;z:0;rX:0deg;rY:45deg;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"x:-150px;rY:-45deg;opacity:0;fb:10px;","ease":"Power3.easeInOut"}]'
 								data-textAlign="['center','center','center','center']"
 								data-paddingtop="[5,5,5,2]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[10,10,10,10]"
+
 								style="z-index: 8; white-space: nowrap; font-size: 50px; line-height: 60px; font-weight: 600; color: #ffffff; letter-spacing: 0px;font-family:Poppins;background-color:rgb(0,0,0);">
 					 <div class='frontcorner'></div><div class='backcorner'></div> </div>
+
 							<!-- LAYER NR. 11 -->
 							<a class="tp-caption   tp-resizeme rs-parallaxlevel-13"
 					 href="https://revolution.themepunch.com/direct-customer-benefits/" target="_blank"			 id="slide-362-layer-4"
@@ -540,16 +599,20 @@
 											data-width="none"
 								data-height="none"
 								data-whitespace="nowrap"
+
 								data-type="text"
 								data-actions=''
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":1700,"speed":1000,"frame":"0","from":"y:100px;z:0;rX:-45deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"y:50px;rX:45deg;opacity:0;fb:10px;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Power1.easeInOut","to":"o:1;sX:1.1;sY:1.1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgb(255,255,255);"}]'
 								data-textAlign="['center','center','center','center']"
 								data-paddingtop="[0,0,0,0]"
 								data-paddingright="[2,2,2,2]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[7,7,7,7]"
+
 								style="z-index: 9; white-space: nowrap; font-size: 20px; line-height: 28px; font-weight: 700; color: #ffffff; letter-spacing: 5px;font-family:Poppins;border-color:rgb(255,255,255);border-style:solid;border-width:3px 3px 3px 3px;cursor:pointer;text-decoration: none;"></a> 
+
 							<!-- LAYER NR. 12 -->
 							<div class="tp-caption   tp-resizeme rs-parallaxlevel-12"
 								 id="slide-362-layer-3"
@@ -558,14 +621,17 @@
 											data-width="none"
 								data-height="none"
 								data-whitespace="nowrap"
+
 								data-type="text"
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":1500,"speed":1000,"frame":"0","from":"y:100px;z:0;rX:-45deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"y:50px;rX:45deg;opacity:0;fb:10px;","ease":"Power3.easeInOut"}]'
 								data-textAlign="['center','center','center','center']"
 								data-paddingtop="[0,0,0,0]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
+
 								style="z-index: 10; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 300; color: #ffffff; letter-spacing: 0px;font-family:Poppins;">
 						</li>
 						<!-- SLIDE  -->
@@ -573,6 +639,7 @@
 							<!-- MAIN IMAGE -->
 							<img src="assets/include/rs-plugin/demos/assets/images/transparent.png"  style='background:#f6b300' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 							<!-- LAYERS -->
+
 							<!-- LAYER NR. 13 -->
 							<div class="tp-caption   tp-resizeme rs-parallaxlevel-12"
 								 id="slide-363-layer-1"
@@ -583,16 +650,20 @@
 								data-width="none"
 								data-height="none"
 								data-whitespace="nowrap"
+
 								data-type="text"
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"x:-150px;z:0;rX:0deg;rY:-45deg;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"x:150px;rY:45deg;opacity:0;fb:10px;","ease":"Power3.easeInOut"}]'
 								data-textAlign="['center','center','center','center']"
 								data-paddingtop="[5,5,5,2]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[10,10,10,10]"
+
 								style="z-index: 5; white-space: nowrap; font-size: 50px; line-height: 60px; font-weight: 600; color: #ffffff; letter-spacing: 0px;font-family:Poppins;background-color:rgb(0,0,0);">
 					<div class="rs-looped rs-slideloop"  data-easing="Linear.easeNone" data-speed="10" data-xs="-20" data-xe="20" data-ys="0" data-ye="0">Votre Commande Dans Vos Mains  <div class='frontcornertop'></div><div class='backcornertop'></div> </div></div>
+
 							<!-- LAYER NR. 14 -->
 							<div class="tp-caption   tp-resizeme rs-parallaxlevel-10"
 								 id="slide-363-layer-9"
@@ -603,18 +674,23 @@
 								data-width="none"
 								data-height="none"
 								data-whitespace="nowrap"
+
 								data-type="text"
 								data-responsive_offset="on"
+
 								data-frames='[{"delay":900,"speed":1000,"frame":"0","from":"x:150px;z:0;rX:0deg;rY:45deg;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Back.easeInOut"},{"delay":"wait","speed":600,"frame":"999","to":"x:-150px;rY:-45deg;opacity:0;fb:10px;","ease":"Power3.easeInOut"}]'
 								data-textAlign="['center','center','center','center']"
 								data-paddingtop="[5,5,5,2]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[10,10,10,10]"
+
 								style="z-index: 6; white-space: nowrap; font-size: 50px; line-height: 60px; font-weight: 600; color: #ffffff; letter-spacing: 0px;font-family:Poppins;background-color:rgb(0,0,0);">
 					<div class="rs-looped rs-slideloop"  data-easing="Linear.easeNone" data-speed="10" data-xs="20" data-xe="-20" data-ys="0" data-ye="0"> Dans 24H ! <div class='frontcorner'></div><div class='backcorner'></div> </div></div>
+
 							<!-- LAYER NR. 15 -->
 						
+
 							<!-- LAYER NR. 16 -->
 							
 						</li>
@@ -622,7 +698,9 @@
 					<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
 				</div>
 			</div><!-- END REVOLUTION SLIDER -->
+
 		</section>
+
   
   <!-- end Slider -->
   
@@ -636,29 +714,32 @@
       <div id="featured-slider" class="product-flexslider hidden-buttons">
         <div class="slider-items slider-width-col4 products-grid">
           
-          
+          <?php foreach($categories as $categorie){?>
           <!-- equipe national -->
           <div class="item">
             <div class="item-inner">
               <div class="item-img">
-                <div > <a class="product-image" title="logo equipe national" href="#"> <img alt="logo equipe national" src="assets/products-images/national.jpg"> </a>
+                <div class="item-img-info"> <a class="product-image" title="lodo de l'esperance" href="#"> <img alt="lodo de l'esperance" src="assets/products-images/<?= $categorie['img'];?>"> </a>
+                  
                   
                 </div>
               </div>
               <div class="item-info">
                 <div class="info-inner">
-                  <div class="item-title"> <a title="hoodies" href="#"> Equipe Nationale </a> </div>
+                  <div class="item-title"> <a title="maillot equipe national" href="clubPage.php?id_categories=<?php echo $categorie['id_categories']; ?>"><?= $categorie['nom_categories'];?> </a> </div>
                   <div class="item-content">
-                 
-                 </div>
+                    
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          
+          <?php } ?>
           <!-- End Item --> 
           
           <!-- club africain-->
-          <div class="item">
+          <!--<div class="item">
             <div class="item-inner">
               <div class="item-img">
                 <div class="item-img-info"> <a class="product-image" title="logo club africain" href="#"> <img alt= "logo club africain" src="assets/products-images/africain.jpg"> </a>
@@ -677,7 +758,7 @@
               </div>
             </div>
           </div>
-          <!-- esperance -->
+         
           
           <div class="item">
             <div class="item-inner">
@@ -698,7 +779,7 @@
             </div>
           </div>
           
-          <!-- etoile de sousse-->
+          
           <div class="item">
             <div class="item-inner">
               <div class="item-img">
@@ -715,7 +796,7 @@
               </div>
             </div>
           </div>
-          <!-- CSS -->
+  
           <div class="item">
             <div class="item-inner">
               <div class="item-img">
@@ -733,7 +814,7 @@
               </div>
             </div>
           </div>
-          <!-- Bizert -->s
+         
           <div class="item">
             <div class="item-inner">
               <div class="item-img">
@@ -750,7 +831,7 @@
               </div>
             </div>
           </div>
-          <!-- End Item --> 
+            --> 
           
         </div>
       </div>
@@ -1254,7 +1335,9 @@
 			<a href="#">
   <span class="author-avatar byline"><img alt="" src="assets/images/admin-photo.jpg" class="avatar avatar-96 photo">By John Doe</span> <span class="timestamp">January 26, 2016</span>
 </a>
+
 			
+
 		</div>
                     <p> Fusce ac pharetra urna. Duis non lacus sit amet lacus interdum facilisis sed non est. Ut mi metus, semper eu dictum nec, condimentum sed sapien.</p>
                     <p> Nullam lobortis nunc semper ipsum luctus ut viverra ante eleifend... </p>
@@ -1278,6 +1361,7 @@
 </a>
 <span class="timestamp">January 20, 2016</span>
 			
+
 		</div>
                     <p>Aliquam laoreet consequat malesuada. Integer vitae diam sed dolor euismod laoreet eget ac felis. Donec non erat sed elit bibendum sodales.</p>
                     <p> Donec eu cursus velit. Proin nunc lacus, gravida mollis dictum ut, vulputate eu turpis... </p>
@@ -1403,6 +1487,7 @@ var dthen1 = new Date("11/26/20 11:59:00 PM");
 	var iid1 = "countbox_2";
 	CountBack_slider(gsecs1, "countbox_2", 1);
 </script>
+
 <script type="text/javascript">
 					var tpj=jQuery;			
 					var revapi4;
@@ -1507,7 +1592,9 @@ var dthen1 = new Date("11/26/20 11:59:00 PM");
 				<!-- SLIDER REVOLUTION 5.x SCRIPTS  -->
 	<script src="assets/include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 	<script src="assets/include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
 	<script src="assets/include/rs-plugin/js/addons/revolution.addon.paintbrush.min.js"></script>
+
 	<!-- SLIDER REVOLUTION EXTENSIONS  -->
 	<script src="assets/include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
 	<script src="assets/include/rs-plugin/js/extensions/revolution.extension.carousel.min.js"></script>
@@ -1518,12 +1605,14 @@ var dthen1 = new Date("11/26/20 11:59:00 PM");
 	<script src="assets/include/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 	<script src="assets/include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
 	<script src="assets/include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+
 	<!-- ADD-ONS JS FILES -->
 	<script>
 		var revapi143,
 			tpj;
 (function() {
 	if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
+
 	function onLoad() {
 		if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
 				if(tpj("#rev_slider_143_1").revolution == undefined){
@@ -1603,11 +1692,14 @@ var dthen1 = new Date("11/26/20 11:59:00 PM");
 						}
 					});
 	}; /* END OF revapi call */
+
 	if(typeof ExplodingLayersAddOn !== "undefined") ExplodingLayersAddOn(tpj, revapi143);
+
 	RevSliderPaintBrush(tpj, revapi143);
  }; /* END OF ON LOAD FUNCTION */
 }()); /* END OF WRAPPING FUNCTION */
 	</script>
+
 </body>
 </html>
                 

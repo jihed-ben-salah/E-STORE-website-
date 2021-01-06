@@ -1,25 +1,16 @@
-<!-- Header -->
-<header>
+
+  
+  <!-- Header -->
+  <?php
+    /*include '../views/afficherProduit.php';*/
+  ?>
+  <header>
     <div class="header-container">
       <div class="header-top">
         <div class="container">
           <div class="row"> 
             <!-- Header Language -->
             <div class="col-xs-7 col-sm-6">
-              <div class="dropdown block-language-wrapper hidden-xs"> <a role="button" data-toggle="dropdown" data-target="#" class="block-language dropdown-toggle" href="#"> <img src="../assets/images/english.png" alt="language"> ANGLAIS <span class="caret"></span> </a>
-                <ul class="dropdown-menu" role="menu">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="../assets/images/english.png" alt="language"> English </a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><img src="../assets/images/francais.png" alt="language"> French </a></li>
-                </ul>
-              </div>
-              <!-- End Header Language --> 
-              
-              <!-- Header Currency -->
-              <div class="dropdown block-currency-wrapper hidden-xs"> <a role="button" data-toggle="dropdown" data-target="#" class="block-currency dropdown-toggle" href="#"> TN <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"> dt-Dinar </a></li>
-                </ul>
-              </div>
               <!-- End Header Currency -->
               
               <div class="welcome-msg hidden-xs">Bienvenue chez E-STORE</div>
@@ -29,7 +20,7 @@
               <div class="top-cart-contain pull-right"> 
             <!-- Top Cart -->
             <div class="mini-cart">
-              <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle"><a href="#"> Mon Compte <span class="cart_count">2</span></a></div>
+             
               <div>
                 <div class="top-cart-content" style="display: none;">
                   <div class="actions">
@@ -38,7 +29,7 @@
                   <!--block-subtitle-->
                   <ul class="mini-products-list" id="cart-sidebar">
                     <li class="item first">
-                      <div class="item-inner"><a class="product-image" title="timi &amp; leslie Sophia Diaper Bag, Lemon Yellow/Shadow White" href="#l"><img alt="timi &amp; leslie Sophia Diaper Bag, Lemon Yellow/Shadow White" src="../aasets/images/products-images/p4.jpg"></a>
+                      <div class="item-inner"><a class="product-image" title="timi &amp; leslie Sophia Diaper Bag, Lemon Yellow/Shadow White" href="#l"><img alt="timi &amp; leslie Sophia Diaper Bag, Lemon Yellow/Shadow White" src="products-images/p4.jpg"></a>
                         <div class="product-details">
                           <div class="access"><a class="btn-remove1" title="Remove This Item" href="#">Remove</a> <a class="btn-edit" title="Edit item" href="#"><i class="icon-pencil"></i><span class="hidden">Edit item</span></a> </div>
                           <!--access--> <strong>1</strong> x <span class="price">100dt</span>
@@ -47,7 +38,7 @@
                       </div>
                     </li>
                     <li class="item last">
-                      <div class="item-inner"><a class="product-image" title="JP Lizzy Satchel Designer Diaper Bag - Slate Citron" href="#"><img alt="JP Lizzy Satchel Designer Diaper Bag - Slate Citron" src="../aasets/images/products-images/p3.jpg"></a>
+                      <div class="item-inner"><a class="product-image" title="JP Lizzy Satchel Designer Diaper Bag - Slate Citron" href="#"><img alt="JP Lizzy Satchel Designer Diaper Bag - Slate Citron" src="products-images/p3.jpg"></a>
                         <div class="product-details">
                           <div class="access"><a class="btn-remove1" title="Remove This Item" href="#">Remove</a> <a class="btn-edit" title="Edit item" href="#"><i class="icon-pencil"></i><span class="hidden">Edit item</span></a> </div>
                           <!--access--> <strong>1</strong> x <span class="price">$80.00</span>
@@ -75,7 +66,7 @@
                 <div class="modal-dialog modal-lg">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <button aria-label="Close" data-dismiss="modal" class="close" type="button"><img src="../aasets/images/interstitial-close.png" alt="close"> </button>
+                      <button aria-label="Close" data-dismiss="modal" class="close" type="button"><img src="images/interstitial-close.png" alt="close"> </button>
                     </div>
                     <div class="modal-body">
                       <form class="navbar-form">
@@ -100,7 +91,7 @@
                 
                   <div class="myaccount"><a title="My Account" href="login.html"><span class="hidden-xs">Mon Compte</span></a></div>
                   <div class="check"><a title="Checkout" href="checkout.html"><span class="hidden-xs">Paiment</span></a></div>
-                  <div class="demo"><a title="Blog" href="blog.html"><span class="hidden-xs">Panier</span></a></div>
+                  <div class="demo"><a title="panier" href="afficherProduit.php"><span class="hidden-xs">Panier</span></a></div>
                   <!-- Header Company -->
                   
                   <!-- End Header Company -->
@@ -123,23 +114,20 @@
   <nav>
     <div class="container">
           <!-- Header Logo -->
-          <div class="logo"><a title="Datson" href="categories.php"><img alt="Datson" src="../assets/images/logo.png"></a></div>
+          <div class="logo"><a title="Datson" href="index.html"><img alt="Datson" src="assets/images/logo.png"></a></div>
           <!-- End Header Logo --> 
+
         <div class="mm-toggle-wrap">
           <div class="mm-toggle"><i class="fa fa-reorder"></i><span class="mm-label">Menu</span> </div>
         </div>
      
           <ul class="nav hidden-xs menu-item menu-item-left">
-            <li class="level0 parent drop-menu active"><a href="categories.php"><span>Home</span></a>
+            <li class="level0 parent drop-menu active"><a href="index.html"><span>Home</span></a>
               
             </li>
-            <li class="level0 parent drop-menu"><a href="#"><span>Pages</span> </a>
+          
               <ul class="level1" style="display: none;">
-                <li class="level1 first"><a href="grid.html"><span>Grid</span></a></li>
-                <li class="level1 nav-10-2"> <a href="list.html"> <span>List</span> </a> </li>
-                <li class="level1 nav-10-3"> <a href="product_detail.html"> <span>Product Detail</span> </a> </li>
-                <li class="level1 nav-10-4"> <a href="shopping_cart.html"> <span>Shopping Cart</span> </a> </li>
-                <li class="level1 first parent"><a href="checkout.html"><span>Checkout</span></a> 
+                
                   <!--sub sub category-->
                   <ul class="level2 right-sub" style="top: 0px; left: 165px; display: none;">
                     <li class="level2 nav-2-1-1 first"><a href="checkout_method.html"><span>Checkout Method</span></a></li>
@@ -233,7 +221,7 @@
                     </div>
                     <!--nav-block nav-block-center-->
                     <div class="col-2">
-                      <div class="menu_image"><a href="#" title=""><img src="../images/menu_image.png" alt="menu_image"></a></div>
+                      <div class="menu_image"><a href="#" title=""><img src="images/menu_image.png" alt="menu_image"></a></div>
                     </div>
                   </div>
                   <!--level0-wrapper2--> </div>
@@ -376,4 +364,4 @@
        
     </div>
   </nav>
-  <!-- end nav -->  
+  <!-- end nav --> 

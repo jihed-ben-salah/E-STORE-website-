@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -17,16 +17,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!-- CSS Style -->
-<link rel="stylesheet" type="text/css" href="css/internal.css">
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="all">
-<link rel="stylesheet" type="text/css" href="css/simple-line-icons.css" media="all">
-<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-<link rel="stylesheet" type="text/css" href="css/revslider.css" >
-<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
-<link rel="stylesheet" type="text/css" href="css/flexslider.css">
-<link rel="stylesheet" type="text/css" href="css/jquery.mobile-menu.css">
+<link rel="stylesheet" type="text/css" href="assets/css/internal.css">
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" media="all">
+<link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css" media="all">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="all">
+<link rel="stylesheet" type="text/css" href="assets/css/revslider.css" >
+<link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="assets/css/owl.theme.css">
+<link rel="stylesheet" type="text/css" href="assets/css/flexslider.css">
+<link rel="stylesheet" type="text/css" href="assets/css/jquery.mobile-menu.css">
 
 <!-- Google Fonts -->
 <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
@@ -48,20 +48,20 @@
     <div class="main container">
       <div class="account-login">
         <div class="page-title">
-          <h1>Login or Create an Account</h1>
+          <h1>Se connecter ou créer un compte</h1>
         </div>
         <fieldset class="col2-set">
-          <legend>Login or Create an Account</legend>
-          <div class="col-1 new-users"><strong>New Customers</strong>
+          <legend>Se connecter ou créer un compte</legend>
+          <div class="col-1 new-users"><strong>Nouveaux clients</strong>
             <div class="content">
-              <p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+              <p>En créant un compte dans notre boutique, vous pourrez passer plus rapidement au processus de paiement, stocker plusieurs adresses de livraison, afficher et suivre vos commandes dans votre compte et plus encore.</p>
               <div class="buttons-set">
-                <button class="button create-account" onclick="window.location.href='../views/create.php';">Create an Account</button>
+                <button class="button create-account" onclick="window.location.href='../views/compte.php';">Créer un compte</button>
 
               </div>
             </div>
           </div>
-          <div class="col-2 registered-users"><strong>Registered Customers</strong>
+          <div class="col-2 registered-users"><strong>Clients inscrit</strong>
             <div class="content">
               <p>If you have an account with us, please log in.</p>
               <ul class="form-list">
@@ -101,35 +101,35 @@
           <div class="slider-items slider-width-col6"> 
             
             <!-- Item -->
-            <div class="item"><a href="#"><img src="images/b-logo3.png" alt="Image"></a> </div>
+            <div class="item"><a href="#"><img src="assets/images/b-logo3.png" alt="Image"></a> </div>
             <!-- End Item --> 
             
             <!-- Item -->
-            <div class="item"><a href="#"><img src="images/b-logo2.png" alt="Image"></a> </div>
+            <div class="item"><a href="#"><img src="assets/images/b-logo2.png" alt="Image"></a> </div>
             <!-- End Item --> 
             
             <!-- Item -->
-            <div class="item"><a href="#"><img src="images/b-logo1.png" alt="Image"></a> </div>
+            <div class="item"><a href="#"><img src="assets/images/b-logo1.png" alt="Image"></a> </div>
             <!-- End Item --> 
             
             <!-- Item -->
-            <div class="item"><a href="#"><img src="images/b-logo4.png" alt="Image"></a> </div>
+            <div class="item"><a href="#"><img src="assets/images/b-logo4.png" alt="Image"></a> </div>
             <!-- End Item --> 
             
             <!-- Item -->
-            <div class="item"><a href="#"><img src="images/b-logo5.png" alt="Image"></a> </div>
+            <div class="item"><a href="#"><img src="assets/images/b-logo5.png" alt="Image"></a> </div>
             <!-- End Item --> 
             
             <!-- Item -->
-            <div class="item"><a href="#"><img src="images/b-logo6.png" alt="Image"></a> </div>
+            <div class="item"><a href="#"><img src="assets/images/b-logo6.png" alt="Image"></a> </div>
             <!-- End Item --> 
             
             <!-- Item -->
-            <div class="item"><a href="#"><img src="images/b-logo1.png" alt="Image"></a> </div>
+            <div class="item"><a href="#"><img src="assets/images/b-logo1.png" alt="Image"></a> </div>
             <!-- End Item --> 
             
             <!-- Item -->
-            <div class="item"><a href="#"><img src="images/b-logo4.png" alt="Image"></a> </div>
+            <div class="item"><a href="#"><img src="assets/images/b-logo4.png" alt="Image"></a> </div>
             <!-- End Item --> 
             
           </div>
@@ -456,3 +456,4 @@
 <script type="text/javascript" src="js/cloud-zoom.js"></script>
 </body>
 </html>
+

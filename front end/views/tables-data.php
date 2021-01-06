@@ -306,16 +306,16 @@
 					<td><?PHP echo $produit['idP']; ?></td>
 					<td><?PHP echo $produit['equipe']; ?></td>
                     <td><?PHP echo $produit['nomP']; ?></td>
-                    <td><?PHP echo $produit['referenceP']; ?></td>
+                    <td><?PHP echo $produit['refP']; ?></td>
                     <td><?PHP echo $produit['marqueP']; ?></td>
                     <td><?PHP echo $produit['modeleP']; ?></td>
                     <td><?PHP echo $produit['couleursP']; ?></td>
-                    <td><?PHP echo $produit['categories']; ?></td>
+                    <td><?PHP echo $produit[ 'categoriesP']; ?></td>
                     <td><?PHP echo $produit['tarifRP']; ?></td>
                     <td><?PHP echo $produit['tarifPP']; ?></td>
                     <td><?PHP echo $produit['tailleP']; ?></td>
                     <td><?PHP echo $produit['descriptifP']; ?></td>
-                    <td><image src='assets/images/<?=$produit['imgP'];?>'></td>				
+                    <td><image src='assets/images/<?=$produit['imageP'];?>'></td>				
 	 <td>
                         <form action="../views/supprimerProduit.php" method="POST" >
                         

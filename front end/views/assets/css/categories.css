@@ -1,0 +1,22 @@
+
+.main-image{
+    margin-left:180%;
+    margin-right:100%;
+    width: 70%;
+    height: 50%;
+    border-radius: 70%;
+    align-items: flex;
+    box-shadow: 20px 20px 20px grey;
+    Background-position: center center;
+   
+  }
+  .main-text{
+      margin-left:165%;
+      margin-right:100%;
+      width:100%;
+      text-align:center;
+      font-weight:bold;
+      color:rgb(165, 55, 55);
+      font-size:1.5em;
+      margin-bottom:15px;
+  }
