@@ -1,5 +1,4 @@
 <?php
-
 class panier{
      private $DB;
     public function __construct($DB){

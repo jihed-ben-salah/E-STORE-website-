@@ -41,7 +41,34 @@
                 $e->getMessage();
             }
         }
-
+        public function afficherProduitByCat($id_categories){
+          try{
+              $pdo = getConnexion();
+              $query = $pdo->prepare(
+                  'SELECT * FROM produit where categoriesp = :id_categories '
+              );
+             $query->execute([
+                 'id_categories' => $id_categories
+             ]);
+             return $query->fetchall();
+          }catch(PDOException $e){
+              $e->getMessage();
+          }
+        }
+        public function afficherCategoriesById($id_categories) {
+            try {
+               $pdo = getConnexion();
+                $query = $pdo->prepare(
+                    'SELECT * FROM categoriesp where id_categories = :id_categories'
+                );
+                $query->execute([
+                    'id_categories' => $id_categories
+                ]);
+                return $query->fetchall();
+             }catch(PDOException $e){
+                 $e->getMessage();
+             }
+    }
       /*  public function getAlbumByTitle($title) {
             try {
                 $pdo = getConnexion();

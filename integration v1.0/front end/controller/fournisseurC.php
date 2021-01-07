@@ -1,14 +1,12 @@
 <?php
 
-include_once "../../front end/config2.php";
+include_once "../config2.php";
 	include_once "../model/fournisseur.php";
-
-
-	class fournisseurC {
+class fournisseurC {
 
 		function ajouterfournisseur( $login ,$mail  ,$password,$user,$token){
-			$sql="INSERT INTO fournisseur (login ,mail  ,password,user,token) 
-			VALUES (:login ,:mail  ,:password,:user ,:token )";
+			$sql="INSERT INTO fournisseur (login ,mail  , password ,user,token) 
+			VALUES (:login ,:mail  , :password ,:user ,:token )";
 			$db = config::getConnexion();
 			try{
 				$query = $db->prepare($sql);
@@ -59,11 +57,11 @@ include_once "../../front end/config2.php";
 		 		$query = $db->prepare(
 		 			'UPDATE fournisseur SET 
 		 		   
-		 		    login= :login,
-		 			  mail= :mail,
-		 			 password= :password,
-		 			 user= :user,
-		 			WHERE id = :id'
+		 		    login=:login ,
+		 			  mail=:mail ,
+		 			 password=:password ,
+		 			 user=:user ,
+		 			WHERE id =:id'
 				 );
 			      $query->execute([	
 					  
@@ -93,25 +91,6 @@ include_once "../../front end/config2.php";
 	 	}
 	 }
 
-	 function connexionfournisseur($mail,$password){
-			 $sql="SELECT * FROM fournisseur WHERE mail='" . $mail . "' and Password = '". $password."'";
-			 $db = config::getConnexion();
-			 try{
-				 $query=$db->prepare($sql);
-				 $query->execute();
-				 $count=$query->rowCount();
-				 if($count==0) {
-					 $message = "pseudo ou le mot de passe est incorrect";
-				 } else {
-					 $x=$query->fetch();
-					 $message = $x['role'];
-				 }
-			 }
-			 catch (Exception $e){
-					 $message= " ".$e->getMessage();
-			 }
-		   return $message;
-		 }
 
 	}
     ?>
